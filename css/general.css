@@ -1,0 +1,271 @@
+/* --------------ROOT------------- */
+:root {
+  --color1: #c9000a;
+  --color2: #ffdb00;
+  --color3: #ffffff;
+  --color4: #161716;
+
+  --font1: arboria, sans-serif;
+}
+
+/* --------------BODY-------------- */
+
+body {
+  font-family: var(--font1);
+}
+
+main div {
+  margin-bottom: 50px;
+}
+
+p {
+  font: var(--font1);
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--color3);
+  font: var(--font1);
+  font-weight: 900;
+  font-size: 4.5rem !important;
+}
+h2 {
+  font: var(--font1);
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+h3 {
+  font: var(--font1);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+h4 {
+  font: var(--font1);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+h5 {
+  font: var(--font1);
+  font-size: 1rem;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+button {
+  font: var(--font1);
+}
+
+.show {
+  display: initial !important;
+}
+
+/* -----------HEADER-------------- */
+header {
+  font-family: var(--font1);
+}
+
+.navbar {
+  transition: 0.2s;
+  max-height: 100px;
+}
+
+.logo1 {
+  width: 0px;
+  max-height: 200px;
+}
+
+.logo2 {
+  max-height: 200px;
+  padding-top: 50px;
+}
+
+.navbar-nav img {
+  max-height: 200px;
+}
+
+.navbar-brand {
+  margin: auto;
+  max-height: 100px;
+}
+
+.navbar-toggler {
+  background: none;
+  color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding-top: 20px;
+  align-self: flex-start;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  background-image: none !important;
+}
+
+.bar {
+  background-image: url(../assets/bar.png);
+  background-repeat: none;
+  height: 4px;
+  width: 40px;
+  margin-bottom: 5px;
+  background-size: cover;
+}
+
+.bar.one {
+  animation: 2s;
+  transition: 0.5s;
+}
+
+.bar.two {
+  animation: 2s;
+  transition: 0.5s;
+}
+
+.bar.three {
+  animation: 2s;
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar.one {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar.two {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar.three {
+  transform: rotate(-45deg) translate(11px, -11px);
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar .fixed-top {
+  box-shadow: 0px 0px 2px grey;
+}
+
+.navbar-nav {
+  margin-left: 50px;
+  margin: left;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar-nav li a {
+  color: var(--color3) !important;
+  margin-right: 50px;
+  font-size: 1.3rem;
+  /* text-transform: capitalize; */
+}
+
+.nav-link {
+  transition: 0.2s;
+}
+.nav-link:hover {
+  opacity: 50% !important;
+  transition: 0.2s;
+}
+
+#book {
+  border: 2px solid var(--purplebrown);
+}
+#book:hover {
+  background-color: var(--purplebrown);
+  color: var(--creme) !important;
+  transition: 0.2s;
+}
+
+.nav-link {
+  padding: 10px !important;
+}
+
+#navbarNavAltMarkup {
+  background-color: none;
+}
+
+.dropdown-menu {
+  background-color: var(--creme) !important;
+  border: none;
+  border-radius: 0;
+}
+
+.dropdown-item:hover {
+  background-color: inherit !important;
+}
+
+/* --------------FOOTER-------------- */
+
+#footer {
+  display: flex;
+  max-width: 800px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-top: 1px solid var(--color4);
+  padding-top: 30px;
+}
+
+#footer h3 {
+  font-weight: 500;
+}
+
+#map {
+  box-shadow: 0px 0px 5px 0px grey;
+}
+
+#by_viola {
+  text-align: center;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* ------------MEDIA QUIERIES------------ */
+@media screen and (max-width: 991px) {
+  .logo1 {
+    width: 200px;
+  }
+  .logo2 {
+    display: none;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+    width: 100%;
+    flex-grow: 1;
+  }
+  .dropdown-menu {
+    margin-left: 30px;
+  }
+  #footer {
+    flex-wrap: wrap;
+  }
+
+  .nav-shadow {
+    box-shadow: 0px 0px 5px rgb(167, 167, 167);
+  }
+
+  #first_container {
+    flex-wrap: wrap;
+  }
+  .container-fluid {
+    background-color: var(--color1);
+  }
+}

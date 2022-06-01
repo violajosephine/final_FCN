@@ -1,0 +1,214 @@
+/* ----------------GENERAL---------------- */
+
+/* ------------- HERO ------------------ */
+
+.hero h1 {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 5rem;
+}
+.hero {
+  background-image: url(../assets/images/20220307-5R2A3209\ copy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+  background-position: top;
+  padding: 20px;
+}
+
+/* ---------------------INTRO--------------------- */
+
+.intro {
+  max-width: 800px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* --------------BREAKER IMAGE-------------- */
+.breakerimage {
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/images/breakerimage.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0;
+}
+
+/* ----------------IMAGETEXT---------------- */
+
+.season_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  margin: 0 !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  max-width: 100%;
+}
+.image_and_text {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.image_and_text img {
+  margin-right: 30px;
+  max-width: 300px;
+}
+
+.image_and_text div {
+  display: flex;
+  flex-direction: column;
+}
+
+.køb {
+  background-color: lightgray;
+  color: var(--color4);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+  border-radius: 32px;
+  align-self: center;
+  transition: 0.2s;
+  border: none;
+}
+.season_container a {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.køb:hover {
+  background-color: gray;
+  transition: 0.2s;
+}
+
+/* -------------SÆSON FORDELE------------- */
+.seasonfordele {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.seasonfordele ul {
+  display: flex;
+  flex-direction: row;
+
+  margin: auto;
+  list-style: none;
+}
+
+.seasonfordele li {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  flex-grow: none;
+}
+
+.fordele_icon {
+  font-size: 5rem;
+}
+
+/* ------------------ESSIEN------------------ */
+
+.essien {
+  background-image: url(../assets/images/essien_hero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-position: center;
+  margin-top: 0 !important;
+}
+
+.essien_text {
+  display: none;
+}
+
+/* ------------VIDEO------------ */
+.kampagnevideo {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* -----------------SIGN UP----------------- */
+.signup_and_video {
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+#mc_embed_signup_scroll div {
+  margin-bottom: 0 !important;
+}
+#mc_embed_signup {
+  max-width: 650px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* ----------------MEDIA QUERIES---------------- */
+
+@media screen and (max-width: 900px) {
+  div {
+    flex-wrap: wrap;
+  }
+  .breakerimage {
+    background-position: left;
+  }
+  .seasonfordele ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image_text {
+    margin-bottom: -30px;
+  }
+  .image_and_text {
+    max-width: 600px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .seasonfordele li {
+    max-width: 215px;
+  }
+  .kampagnevideo {
+    max-width: 80%;
+  }
+
+  .essien {
+    background-image: url(../assets/images/essien_hero_long.jpg);
+    background-size: cover;
+    background-position: top center;
+  }
+  .essien_text {
+    display: inherit;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .navbar-nav {
+    margin-top: 100px;
+  }
+  #mc_embed_signup {
+    max-width: 100% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
